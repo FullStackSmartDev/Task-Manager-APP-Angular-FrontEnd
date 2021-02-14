@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import {TaskViewComponent} from './pages/task-view/task-view.component';
 import {NewListComponent} from './pages/new-list/new-list.component';
 import {NewTaskComponent} from './pages/new-task/new-task.component';
+import {LoginPageComponent} from './pages/login-page/login-page.component';
 
 const routes: Routes = [
   {
@@ -25,6 +26,10 @@ const routes: Routes = [
   {
     path: 'lists/:listId/new-task',
     component: NewTaskComponent
+  },
+  {
+    path: 'login',
+    component: LoginPageComponent
   }
 ];
 

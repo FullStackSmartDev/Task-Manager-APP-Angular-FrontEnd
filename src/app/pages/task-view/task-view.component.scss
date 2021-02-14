@@ -28,13 +28,6 @@
   border-bottom-right-radius: 8px;
 }
 
-.title {
-  font-family: 'Lato';
-  font-size: 24px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
-
 .list-menu {
   display: flex;
   flex-direction: column;
@@ -91,4 +84,10 @@
   height: 50px;
   width: 50px;
   border-radius: 50%;
+}
+
+.empty-state-text {
+  font-size: 20px;
+  color:#777;
+  text-align: center;
 }
