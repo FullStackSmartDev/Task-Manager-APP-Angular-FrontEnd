@@ -37,4 +37,13 @@ export class WebRequestService {
       observe: 'response'
     });
   }
+
+  signup(email: string, password: string): Observable<any> {
+    return this.http.post(`${this.ROOT_URL}/users/register`, {
+      email,
+      password
+    }, {
+      observe: 'response'
+    });
+  }
 }

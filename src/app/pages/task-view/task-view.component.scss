@@ -16,6 +16,7 @@
   padding: 42px;
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
+  overflow: auto;
 }
 
 .tasks-list-container {
@@ -26,6 +27,16 @@
   padding: 42px;
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
+  overflow: auto;
+
+  .top-bar {
+    display: flex;
+    margin-bottom: 20px;
+    .title {
+      margin: 0;
+      flex-grow: 1;
+    }
+  }
 }
 
 .list-menu {
