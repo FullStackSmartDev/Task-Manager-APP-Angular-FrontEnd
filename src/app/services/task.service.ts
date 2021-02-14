@@ -20,6 +20,11 @@ export class TaskService {
     return this.webRequestService.post('lists', { title });
   }
 
+  updateList(id: string, title: string): Observable<List> {
+    // We want to send a web request to update a list
+    return this.webRequestService.patch(`lists/${id}`, { title });
+  }
+
   deleteList(id: string): Observable<List> {
     return this.webRequestService.delete(`lists/${id}`);
   }
@@ -30,6 +35,10 @@ export class TaskService {
 
   createTask(listId: string, title: string): Observable<Task> {
     return this.webRequestService.post(`lists/${listId}/tasks`, { title });
+  }
+
+  deleteTask(listId: string, taskId: string): Observable<Task> {
+    return this.webRequestService.delete(`lists/${listId}/tasks/${taskId}`);
   }
 
   taskComplete(task: Task): Observable<Task> {
