@@ -42,7 +42,7 @@
             <p>{{ task.title }}</p>
           </div>
           <div class="task-buttons">
-            <button class="button">
+            <button class="button" [routerLink]="['/lists', selectedListId, 'edit-task', task._id]">
               <div class="icon">
                 <i class="fas fa-edit"></i>
               </div>
